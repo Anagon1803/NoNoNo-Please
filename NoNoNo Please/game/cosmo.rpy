@@ -1,6 +1,6 @@
 label intro_cosmo:
 
-    scene room at resize_bg
+    scene bg garden at resize_bg
 
     "Je viens à peine de garer la voiture devant le portail que quelque chose me frappe : le jardin\nEnfin… ce qu’il reste du jardin. On dirait une jungle tropicale qui a décidé de se mettre en grève."
 
@@ -8,7 +8,7 @@ label intro_cosmo:
 
     "Je fais trois pas dans l’herbe, et soudain une fumée verte (oui, VERTE) s’élève du sol."
 
-    show cosmo_neutre at center with fade
+    show cosmo neutre at center with fade
 
     c "Héééééé mec… tu peux faire attention à mes vibes ? Tu marche sur mes cousine là !"
 

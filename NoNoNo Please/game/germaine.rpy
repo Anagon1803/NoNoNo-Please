@@ -1,6 +1,6 @@
 label intro_germaine:
 
-    scene room at resize_bg
+    scene bg hall at resize_bg
 
     "Je déboule dans un couloir en courant, poursuivi par une ex morte et une bibliothèque qui me fait passer un bac de français accéléré."
 
@@ -14,7 +14,7 @@ label intro_germaine:
 
     "Un lent grincement résonne dans l’escalier juste à côté de moi.\nUn bruit que je connais trop bien.\nLe bruit du bois ancien… et du jugement."
 
-    show germaine_neutre at center with fade
+    show germaine neutre at center with fade
 
     g "Voilà."
 

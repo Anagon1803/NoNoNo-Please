@@ -1,18 +1,20 @@
 label intro_abby:
 
-    scene room at resize_bg
+    scene bg hall at resize_bg
 
     "Je claque la porte du hall et m’appuie dessus, essoufflé, comme si Cosmo allait traverser le mur pour me faire un exposé sur la biodiversité de mon slip."
 
     "Je sens la porte trembler."
 
+    scene bg library at resize_bg
+    
     "Dans la panique, je me mets à fuir dans la salle la plus proche de moi, la bibliothèque ! Grâce à mon talent rare pour la lâcheté, je parcours les quelques mètres sans me faire de point de côté."
 
     b "Ok, bon, respire Billy, juste deux jours… deux… petits… jours…"
 
     "Une brise glacée me frôle la nuque.\nUne voix se glisse dans mon oreille comme une chanson d’ascenseur possédée."
 
-    show abby_neutre at center with fade
+    show abby neutre at center with fade
 
     a "Alors on revient à la maison… Billy ?"
 

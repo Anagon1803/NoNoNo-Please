@@ -4,6 +4,11 @@ image cosmo neutre = "images/cosmo_neutre.png"
 image abby neutre = "images/abby_neutre.png"
 image germaine neutre = "images/germaine_neutre.png"
 
+image bg garden = "images/bg_garden.png"
+image bg hall = "images/bg_hall.png"
+image bg library = "images/bg_library.png"
+image bg kitchen = "images/bg_kitchen.png"
+
 # Déclarez les personnages utilisés dans le jeu.
 define b = Character('Billy', color="#fde9a5")
 define l = Character('Léa', color="#fde9a5")
