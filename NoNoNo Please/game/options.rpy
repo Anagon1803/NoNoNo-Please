@@ -6,6 +6,8 @@
 ## sont du code commenté et vous pouvez les décommentez quand c’est approprié
 ## (pour votre projet).
 
+init python:
+    config.developer = True
 
 ## Bases #######################################################################
 

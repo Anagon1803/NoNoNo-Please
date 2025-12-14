@@ -1,6 +1,6 @@
 label intro_germaine:
 
-    scene bg hall at resize_bg
+    scene bg hall
 
     "Je déboule dans un couloir en courant, poursuivi par une ex morte et une bibliothèque qui me fait passer un bac de français accéléré."
 
@@ -143,3 +143,62 @@ label intro_germaine:
     "La fuite."
 
     "Je finis par atteindre ma chambre."
+
+    jump intro_bedroom
+
+label germaine_mission:
+
+    scene bg hall
+    show germaine neutre at center with fade
+
+    if germaine_mission == 0:
+        "Vous savez quoi faire quand votre grand-mère veut votre peau ? Eh bien pas moi."
+        
+        "J’imagine que ça va être quitte ou double."
+        
+        g "Tu as quoi à me regarder comme ça avec tes yeux de merlan frit ? On va finir par comprendre que tu as aucune lueur d’intelligence !"
+        
+        "Je prends tout mon courage et je la charge de compliments. Faire gonfler son ego semble la meilleure tactique avec elle."
+        
+        g "Eh bien, je comprends pourquoi tu as une copine. Tu es assez fort pour faire de la lèche et manier ta langue."
+        
+        b "Je tiens ça de papy."
+        
+        g "Si seulement !"
+        
+        "Dégueulasse."
+        
+        g "Mais ces belles paroles ne sont pas suffisantes pour que je me laisse aller à t’aider."
+        
+        g "Tu vas devoir faire des choses pour ta grand-mère pour qu’elle veuille bien t’aider."
+        
+        b "C’est… c’est vraiment gentil de vouloir m’aider."
+        
+        g "Ta gueule oui ! Je fais surtout ça pour pas avoir à t’entendre couiner quand elle te pliera la BIT-"
+        
+        b "AH ÇA VA ! C’EST BON J’AI COMPRIS !"
+
+        $ germaine_mission = 1
+    
+    if germaine_mission == 1:
+        g "Bon écoute-moi bien petit garnement, tu as des tâches à faire."
+
+        if not germaine_trash:
+            g "Tu vas devoir ranger cette maison ! Il y a des piles de MERDIER PARTOUT. Va prendre la poubelle dans la cuisine et faire le tour de la maison."
+        
+        if germaine_trash:
+            g "Eh bien, je suis impressionné que tu aies pu faire une tâche ménagère."
+
+        if not germaine_grave:
+            g "Tu vas déterrer ton grand-père ! Il est hors de question que je m’occupe de toutes les tâches ici alors que ce dernier se la coule douce dans sa tombe !"
+        
+        if germaine_grave:
+            g "Bravo pour avoir sorti ton grand-père de sa sieste ! Évidemment, ce tas d’os ne veut pas bouger, c’est moi qui fais tout dans cette baraque !"
+        
+        if germaine_trash and germaine_grave:
+            $ germaine_mission = 2
+
+    if germaine_mission == 2:
+        g "Cela t’a pris 25 ans, mais tu as enfin bougé ton cul pour faire quelque chose dans cette baraque !"
+
+    jump free_move_hall

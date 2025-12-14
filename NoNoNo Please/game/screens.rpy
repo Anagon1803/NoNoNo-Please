@@ -97,6 +97,8 @@ style frame:
 
 screen say(who, what):
 
+    use hud_time_units
+
     window:
         id "window"
 

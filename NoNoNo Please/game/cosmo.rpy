@@ -1,6 +1,6 @@
 label intro_cosmo:
 
-    scene bg garden at resize_bg
+    scene bg garden
 
     "Je viens à peine de garer la voiture devant le portail que quelque chose me frappe : le jardin\nEnfin… ce qu’il reste du jardin. On dirait une jungle tropicale qui a décidé de se mettre en grève."
 
@@ -85,3 +85,58 @@ label intro_cosmo:
     "Et sans lui laisser le temps de répondre une autre connerie, je m’enfuis dans le hall du manoir."
 
     jump intro_abby
+
+label cosmo_mission:
+
+    scene bg hall
+    show cosmo neutre at center with fade
+
+    if cosmo_mission == 0:
+        "Je m’approche de Cosmo, avec un peu de confiance."
+
+        "Après tout c’est un mec comme moi, il devrait comprendre."
+
+        c "Toi t’as un truc à me demander, et je sens que ça va pas me plaire bro."
+
+        "Je passe alors quelques brèves minutes à m’excuser, et à lui expliquer que je suis qu’une merde. Cette dernière chose est facile à lui faire avaler."
+
+        c "Bro… tu vas avoir besoin de moi. Et ça, ça vaut beaucoup plus que quelques excuses."
+
+        "Je déglutis."
+
+        "Cosmo flotte devant moi, bras croisés, l’air d’un gourou prêt à bénir ou maudire."
+
+        c "On va faire un marché, Billy."
+
+        b "Quel genre de marché… ?"
+
+        c "Simple : tu m’aides à “sauver la planète” dans le manoir… et je t’aide à ne pas te faire attraper par ta copine en chaleur."
+
+        b "Du coup… t’es… avec moi ?"
+
+        c "Non, mec. Je suis avec la Terre, mais tu viens en bonus."
+
+        $ cosmo_mission = 1
+    
+    if cosmo_mission == 1:
+        c "Voilà ce que tu dois faire."
+
+        if not cosmo_book:
+            c "Tu dois me trouver un livre bro ! Marguerite, ma fleur de compagnie qui me sert de compagne, ne peut pas dormir sans une bonne histoire. Trouve-moi un exemplaire de ‘La Phytophilie chez les elfes sylvains’."
+        
+        if cosmo_book:
+            c "Parfait pour le livre ! Ma copine est une vraie plante de culture. Mec, je suis sûr que ça va lui plaire."
+
+        if not cosmo_war:
+            c "Il y a aussi une guerre entre la République des tulipes et l’État facho des mauvaises herbes. Faut que tu traites le problème à la racine. Et avant que tu demandes pourquoi je le fais pas moi, je suis un pacifiste."
+        
+        if cosmo_war:
+            c "C’est triste… mais c’était la bonne chose à faire. Espérons que les mauvaises herbes n’auront pas de nouveau chancelier dans les prochains jours." 
+        
+        if cosmo_book and cosmo_war:
+            $ cosmo_mission = 2
+
+    if cosmo_mission == 2:
+        c "T’inquiète mon frère, t’es béni des fleurs désormais !"
+
+    jump free_move_hall
