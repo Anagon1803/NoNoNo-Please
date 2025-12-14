@@ -35,6 +35,12 @@ define config.version = "1.0"
 ## guillemets, et laissez une ligne entre les paragraphes.
 
 define gui.about = _p("""
+    Suivez le challenge stupid de Billy, un "ado" de 25 ans qui s'est mis en tête de réussir le No Nut November tout en fuyant sa copine. Il ira se réfugier dans le manoir hanté de sa grand-mère décédée, mais les fantômes de son passé ne sont pas prêts à le laisser tranquille...\n\n
+
+    Un visual Novel, Point & Click par Anaëlle Urbon et "Kross" (je t'aime mon chérie).
+
+    Ecriture : Kross
+    Art et Dev : Anaëlle Urbon
 """)
 
 

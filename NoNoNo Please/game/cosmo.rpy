@@ -8,7 +8,7 @@ label intro_cosmo:
 
     "Je fais trois pas dans l’herbe, et soudain une fumée verte (oui, VERTE) s’élève du sol."
 
-    show cosmo neutre at center with fade
+    show cosmo neutre at center 
 
     c "Héééééé mec… tu peux faire attention à mes vibes ? Tu marche sur mes cousine là !"
 
@@ -23,6 +23,8 @@ label intro_cosmo:
     "Le fantôme lève les yeux au ciel comme si je venais de prononcer le mot interdit."
 
     c "Ouais, BROOOO… Cosmo. Celui dont tu as anéanti TRENTE-TROIS plants de beuh en jouant au foot dans MON jardin, tu t’en souviens ?"
+
+    show cosmo angry at center 
 
     "Il tire une latte, la fumée forme un panneau « INTERDIT AUX GOSSES DE MERDE »."
 
@@ -53,6 +55,8 @@ label intro_cosmo:
     "Cosmo me dévisage, puis son expression change.\nLe type sourit. Mais en même temps, il était parfaitement terrifiant. On dirais qu’il viens de débrancher et brancher son cerveau."
 
     b "Ok pardon j’aurais pas du dire ça… je… je suis grave stressé d’accord ? Je doit survire à ma meuf là !"
+
+    show cosmo neutre at center 
 
     c "Attend mec… t’as une meuf ? TOI ? HA ! Faut croire que la vie trouve toujours un chemin, même s’il mène à un attardé mental. Moi qui pensais que j’étais le seul défoncé dans les environs, faut que je rencontre ta copine."
 
@@ -89,12 +93,14 @@ label intro_cosmo:
 label cosmo_mission:
 
     scene bg hall
-    show cosmo neutre at center with fade
+    show cosmo neutre at center 
 
     if cosmo_mission == 0:
         "Je m’approche de Cosmo, avec un peu de confiance."
 
         "Après tout c’est un mec comme moi, il devrait comprendre."
+
+        show cosmo angry at center 
 
         c "Toi t’as un truc à me demander, et je sens que ça va pas me plaire bro."
 
@@ -105,6 +111,8 @@ label cosmo_mission:
         "Je déglutis."
 
         "Cosmo flotte devant moi, bras croisés, l’air d’un gourou prêt à bénir ou maudire."
+
+        show cosmo neutre at center 
 
         c "On va faire un marché, Billy."
 

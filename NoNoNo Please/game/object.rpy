@@ -215,7 +215,7 @@ label oven:
 
 label bed:
 
-    scene black
+    scene bg bedroom
 
     "Hum… Devrais-je dépenser une unité de temps en priant pour la consolidation de ma colonne vertébrale ?"
 
@@ -226,5 +226,33 @@ label bed:
 
         "NON":
             "Je suis pas ENCORE dans la merde à ce point."
+
+    jump free_move_bedroom
+
+label ewen:
+
+    scene bg bedroom
+
+    "Ewen Talleux, mon deveuloppeur de jeu préféré !!"
+
+    "C'est mon idole absolu, le dieu vivant du game design francais."
+
+    menu:
+        "Lui parler de No Nut November":
+            $ time_units -= 2
+            "Ewen me regarde avec des yeux pleins de compassion."
+
+            e "Billy, mon garçon… tu es en train de faire une grave erreur."
+
+            e "Le No Nut November est un concept toxique qui promeut la répression des désirs naturels et sains du corps humain."
+
+            e "En tant que développeur de jeux vidéo, je t'encourage à embrasser ta sexualité de manière responsable et à ne pas te laisser influencer par des défis absurdes."
+
+            e "N'oublie pas que le véritable plaisir vient de l'acceptation de soi et du respect de ses propres besoins."
+
+            "Je me sens… libéré."
+
+        "Ne pas lui parler":
+            "Flemme."
 
     jump free_move_bedroom

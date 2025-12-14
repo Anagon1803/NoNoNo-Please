@@ -1,9 +1,14 @@
 # Déclarez sous cette ligne les images, avec l'instruction 'image'
 # ex: image eileen heureuse = "eileen_heureuse.png"
 image cosmo neutre = "images/cosmo_neutre.png"
+image cosmo angry = "images/cosmo_colere.png"
 image abby neutre = "images/abby_neutre.png"
+image abby angry = "images/abby_colere.png"
 image germaine neutre = "images/germaine_neutre.png"
+image germaine angry = "images/germaine_colere.png"
 
+image bg car = "images/bg_car.jpg"
+image bg bedroom = "images/bg_bedroom.jpg"
 image bg garden = "images/bg_garden.jpg"
 image bg hall = "images/bg_hall.jpg"
 image bg library = "images/bg_library.jpg"
@@ -17,13 +22,7 @@ define l = Character('Léa', color="#fde9a5")
 define c = Character('Cosmo', color="#a8b977")
 define a = Character('Abby', color="#d6767b")
 define g = Character('Germaine', color="#ffba53")
-
-transform resize_char:
-    zoom 0.7
-    ypos 1300
-
-transform resize_bg:
-    xysize(config.screen_width, config.screen_height)  # Prend la taille de l'écran
+define e = Character('LE Ewen Talleux', color="#f54291")
 
 transform rotate_25:
     rotate 25

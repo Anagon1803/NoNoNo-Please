@@ -14,7 +14,7 @@ label intro_germaine:
 
     "Un lent grincement résonne dans l’escalier juste à côté de moi.\nUn bruit que je connais trop bien.\nLe bruit du bois ancien… et du jugement."
 
-    show germaine neutre at center with fade
+    show germaine neutre at center 
 
     g "Voilà."
 
@@ -67,6 +67,8 @@ label intro_germaine:
     "Le silence."
 
     "Ho, je suis foutu, je suis mort."
+
+    show germaine angry at center
 
     g "UNE."
 
@@ -149,7 +151,7 @@ label intro_germaine:
 label germaine_mission:
 
     scene bg hall
-    show germaine neutre at center with fade
+    show germaine neutre at center 
 
     if germaine_mission == 0:
         "Vous savez quoi faire quand votre grand-mère veut votre peau ? Eh bien pas moi."
@@ -173,6 +175,8 @@ label germaine_mission:
         g "Tu vas devoir faire des choses pour ta grand-mère pour qu’elle veuille bien t’aider."
         
         b "C’est… c’est vraiment gentil de vouloir m’aider."
+
+        show germaine angry at center
         
         g "Ta gueule oui ! Je fais surtout ça pour pas avoir à t’entendre couiner quand elle te pliera la BIT-"
         

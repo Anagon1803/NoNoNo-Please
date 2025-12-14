@@ -1,6 +1,6 @@
 label intro_bedroom:
 
-    scene black with fade
+    scene bg bedroom
 
     "Je referme derrière moi la porte de ma chambre. En faisant une petite prière"
 
@@ -255,19 +255,21 @@ label intro_bedroom:
 
 label tuto:
 
-    "Bon… mon temps est limité. J’ai 6 heures devant moi pour trouver une solution contre la bête assoiffée de luxure qui me sert de copine."
+    scene bg bedroom
+
+    "Bon… mon temps est limité. J’ai 5 heures 30 devant moi pour trouver une solution contre la bête assoiffée de luxure qui me sert de copine."
     
     "Je dois faire gaffe à ne pas procrastiner comme à mon habitude et à ne pas perdre du temps avec des tâches inutiles."
     
     "Comme je suis un débile complet, je vais stimuler mon cerveau en confondant la réalité avec un jeu vidéo !"
     
-    "Si je divise les 6 h en périodes de temps de 30 minutes… cela me fait…"
+    "Si je divise les 5h30 en périodes de temps de 30 minutes… cela me fait…"
     
     "…"
     
-    "12 périodes de temps de 30 minutes ! J’suis trop fort en mathémagie !"
+    "11 périodes de temps de 30 minutes ! J’suis trop fort en mathémagie !"
     
-    "J’ai donc 12 périodes de temps avant que la folle débarque, il faut que je dépense ces périodes avec bon escient si je veux avoir une chance de sauver mes petites miches !"
+    "J’ai donc 11 périodes de temps avant que la folle débarque, il faut que je dépense ces périodes avec bon escient si je veux avoir une chance de sauver mes petites miches !"
     
     "Avant de faire une tâche qui prend du temps, j’essaierai d’analyser combien de périodes de temps cela me demandera pour la réaliser, ainsi je pourrai savoir ce qui vaut le coup d’être fait ou non."
     
@@ -297,9 +299,9 @@ label tuto:
             "Je ne vais pas aller loin si je ne l'enlève pas."
             jump barricade
 
-label vraie_bonne_fin:
+label vraie_bonne_fin: # 0 fantomes en etat 2
 
-    scene black with fade
+    scene bg bedroom
 
     "Je me suis réfugié dans ma chambre… je n’ai rien fait pour l’empêcher de venir."
 
@@ -327,9 +329,9 @@ label vraie_bonne_fin:
 
     return
 
-label mauvaise_fin:
+label mauvaise_fin: # 1 fantomes en etat 2
 
-    scene black with fade
+    scene bg bedroom
 
     "Ok… j’ai aidé un fantôme… ça va la retenir… Hein ? Hein ?"
 
@@ -365,9 +367,9 @@ label mauvaise_fin:
 
     return
 
-label fin_neutre:
+label fin_neutre: # 2 fantomes en etat 2
 
-    scene black with fade
+    scene bg bedroom
 
     "Ok… j’ai l’aide de deux fantômes, cela devrait aller !?"
 
@@ -393,9 +395,9 @@ label fin_neutre:
 
     return
 
-label bonne_fin:
+label bonne_fin: # 3 fantomes en etat 2
 
-    scene black with fade
+    scene bg bedroom
 
     "Avec Abby, Cosmo et mamie… je devrais survivre !"
 
@@ -431,6 +433,8 @@ label bonne_fin:
 
     "C’est peut-être une connerie, mais il faut que je sorte voir ce qui se passe."
 
+    scene bg hall
+
     "Je sors alors de la chambre et descends les escaliers, c’est un foutoir complet ! Il y a de l’ectoplasme partout et tout est détruit !"
 
     "…"
@@ -457,8 +461,32 @@ label bonne_fin:
 
     "Pas de temps à perdre ! Tout ce contenu ne va pas se consommer tout seul !"
 
+    scene bg car
+
     "C’est sur ces mots que je m’enfuis de ce manoir avec la voiture de Léa. Sous le regard de trois fantômes qui doivent encore se demander pourquoi ils ont aidé un abruti pareil."
 
     "Bonne fin : Tu as survécu jeune héros ! Maintenant file rattraper ton retard !"
 
     return
+
+label check_end:
+
+    $ count = 0
+
+    if cosmo_mission == 2:
+        $ count += 1
+
+    if abby_mission == 2:
+        $ count += 1
+
+    if germaine_mission == 2:
+        $ count += 1
+
+    if count == 0:
+        jump vraie_bonne_fin
+    elif count == 1:
+        jump mauvaise_fin
+    elif count == 2:
+        jump fin_neutre
+    else:
+        jump bonne_fin

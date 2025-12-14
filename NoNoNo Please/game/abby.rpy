@@ -14,7 +14,7 @@ label intro_abby:
 
     "Une brise glacée me frôle la nuque.\nUne voix se glisse dans mon oreille comme une chanson d’ascenseur possédée."
 
-    show abby neutre at center with fade
+    show abby neutre at center 
 
     a "Alors on revient à la maison… Billy ?"
 
@@ -37,6 +37,8 @@ label intro_abby:
     "Je tente un sourire maladroit."
 
     b "Abby, écoute… c’est compliqué, je-"
+
+    show abby angry at center
 
     a "NON."
 
@@ -82,6 +84,8 @@ label intro_abby:
 
     b "…Je fuis ma copine."
 
+    show abby neutre at center
+
     a "Oh."
 
     "Elle sourit lentement, comme quelqu’un qui vient d’apprendre qu’il existe un enfer encore plus profond que celui où elle est."
@@ -89,6 +93,8 @@ label intro_abby:
     a "Tu fuis… ta copine ?"
 
     b "Oui."
+
+    show abby angry at center
 
     "Je baisse les yeux. Et malheureusement, elle apprend vite, je me prends ses Robert dans la tronche."
 
@@ -113,12 +119,14 @@ label intro_abby:
 label abby_mission:
 
     scene bg hall
-    show abby neutre at center with fade
+    show abby neutre at center 
 
     if abby_mission == 0:
         "Je m’approche avec beaucoup de crainte d’Abby."
         
         "Avec de la chance, elle détesteras ma copine plus qu’elle ne me déteste moi." 
+
+        show abby angry at center
         
         a "Que me veux mon ex pas encore décédé de ma main ?"
         
@@ -150,9 +158,11 @@ label abby_mission:
         
         a "Grosse poitrine ?"
         
-        a "Abby !"
+        b "Abby !"
         
         a "Pardon. C’était juste professionnel de ma part."
+
+        show abby neutre at center
         
         "Elle s’arrête devant moi, bras derrière le dos, l’air faussement innocente."
         

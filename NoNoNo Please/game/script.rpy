@@ -1,6 +1,8 @@
 ﻿# Le jeu commence ici
 label start:
 
+    scene bg car
+
     "Je fixe la route, les mains crispées sur le volant, comme si ma vie en dépendait. Bon, ok, peut-être que ma vie n’est pas en jeu… mais ma dignité, oui."
 
     "…. enfin surtout mon dos et mon pelvis en réalité"

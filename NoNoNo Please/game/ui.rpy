@@ -30,8 +30,8 @@ screen hud_time_units():
 
             # Barre de temps
             bar:
-                value AnimatedValue(time_units, range=12, delay=0.2)
+                value AnimatedValue(time_units, range=11, delay=0.2)
                 xmaximum 220
-                ymaximum 12
+                ymaximum 11
                 left_bar Solid("#fde9a5")
                 right_bar Solid("#444444")

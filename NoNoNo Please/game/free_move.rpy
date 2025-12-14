@@ -32,6 +32,9 @@ screen point_click_hall:
 
 label free_move_hall:
 
+    if time_units <= 0 or (cosmo_mission == 2 and abby_mission == 2 and germaine_mission == 2):
+        jump check_end
+
     call screen point_click_hall
 
 # =======================================================
@@ -51,6 +54,9 @@ screen point_click_library:
         action Jump("free_move_hall")
 
 label free_move_library:
+
+    if time_units <= 0:
+        jump check_end
 
     call screen point_click_library
 
@@ -72,6 +78,9 @@ screen point_click_kitchen:
 
 label free_move_kitchen:
 
+    if time_units <= 0:
+        jump check_end
+
     call screen point_click_kitchen
 
 # =======================================================
@@ -87,6 +96,9 @@ screen point_click_garden:
 
 label free_move_garden:
 
+    if time_units <= 0:
+        jump check_end
+
     call screen point_click_garden
 
 # ======================================================
@@ -94,9 +106,14 @@ label free_move_garden:
 screen point_click_bedroom:
 
     imagemap:
-        ground "black"
-        hotspot (0, 0, 227, 232) action Jump("bed")
+        ground "bg bedroom"
+        hotspot (0, 478, 708, 421) action Jump("bed")
+        hotspot (1422, 150, 332, 637) action Jump("free_move_hall")
+        hotspot (1022, 118, 283, 297) action Jump("ewen")
 
 label free_move_bedroom:
+
+    if time_units <= 0:
+        jump check_end
 
     call screen point_click_bedroom
