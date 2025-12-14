@@ -233,22 +233,22 @@ label ewen:
 
     scene bg bedroom
 
-    "Ewen Talleux, mon deveuloppeur de jeu préféré !!"
+    "Ewen Talleux, mon développeur de jeux préféré !!"
 
-    "C'est mon idole absolu, le dieu vivant du game design francais."
+    "C'est mon idole absolue, le dieu vivant du game design français."
 
     menu:
         "Lui parler de No Nut November":
             $ time_units -= 2
             "Ewen me regarde avec des yeux pleins de compassion."
 
-            e "Billy, mon garçon… tu es en train de faire une grave erreur."
+            ew "Billy, mon garçon… tu es en train de faire une grave erreur."
 
-            e "Le No Nut November est un concept toxique qui promeut la répression des désirs naturels et sains du corps humain."
+            ew "Le No Nut November est un concept toxique qui promeut la répression des désirs naturels et sains du corps humain."
 
-            e "En tant que développeur de jeux vidéo, je t'encourage à embrasser ta sexualité de manière responsable et à ne pas te laisser influencer par des défis absurdes."
+            ew "En tant que développeur de jeux vidéo, je t'encourage à embrasser ta sexualité de manière responsable et à ne pas te laisser influencer par des défis absurdes."
 
-            e "N'oublie pas que le véritable plaisir vient de l'acceptation de soi et du respect de ses propres besoins."
+            ew "N'oublie pas que le véritable plaisir vient de l'acceptation de soi et du respect de ses propres besoins."
 
             "Je me sens… libéré."
 

@@ -22,7 +22,7 @@ define l = Character('Léa', color="#fde9a5")
 define c = Character('Cosmo', color="#a8b977")
 define a = Character('Abby', color="#d6767b")
 define g = Character('Germaine', color="#ffba53")
-define e = Character('LE Ewen Talleux', color="#f54291")
+define ew = Character('LE Ewen Talleux', color="#f54291")
 
 transform rotate_25:
     rotate 25

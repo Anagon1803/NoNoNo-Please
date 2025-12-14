@@ -341,9 +341,9 @@ label mauvaise_fin: # 1 fantomes en etat 2
 
     "Léa entre dans la chambre, visiblement furieuse."
 
-    "Billy, c’est l’heure du sandwich à la BI-"
+    l "Billy, c’est l’heure du sandwich à la BI-"
 
-    "HO MERDE !"
+    b "HO MERDE !"
 
     "Elle me saute dessus avec fougue !"
 
@@ -353,13 +353,13 @@ label mauvaise_fin: # 1 fantomes en etat 2
 
     "Je subis des assauts tellement forts que je sens mes os craquer !"
 
-    "NON… MAIS MA COLONNE ! OH PUTAIN !"
+    b "NON… MAIS MA COLONNE ! OH PUTAIN !"
 
     "Crac"
 
     "Le NNN… mort… ma colonne… morte… moi… un peu mort aussi !"
 
-    "Si tu avais écouté, tout ça ne serait pas arrivé."
+    l "Si tu avais écouté, tout ça ne serait pas arrivé."
 
     "Ma colonne… je vais pleurer… enfin… pas maintenant… j’ai trop mal."
 
@@ -379,7 +379,7 @@ label fin_neutre: # 2 fantomes en etat 2
 
     "Léa entre dans la chambre, visiblement furieuse, mais aussi fatiguée."
 
-    "Ok… ça sent pas bon…"
+    b "Ok… ça sent pas bon…"
 
     "Elle me saute dessus !"
 
@@ -407,7 +407,7 @@ label bonne_fin: # 3 fantomes en etat 2
 
     "Et au bout de quelques minutes j’entends la voiture de Léa se garer."
 
-    "PUTAIN DE PLANTE DE MERDE !!!"
+    l "PUTAIN DE PLANTE DE MERDE !!!"
 
     "J’ai un sourire, Cosmo est en train de mener une guérilla dans le jardin au bon goût du Vietnam pour fatiguer Léa."
 
@@ -443,13 +443,13 @@ label bonne_fin: # 3 fantomes en etat 2
 
     "…"
 
-    "Ho merde LÉA !!!"
+    b "Ho merde LÉA !!!"
 
     "Je m’approche d’elle, et au même moment mon téléphone vibre."
 
-    "Il est 00h01 !"
+    b "Il est 00h01 !"
 
-    "J’AI RÉUSSI !!! J’AI RÉUSSI MON TEST DE VOLONTÉ !!!"
+    b "J’AI RÉUSSI !!! J’AI RÉUSSI MON TEST DE VOLONTÉ !!!"
 
     "Je pleure sur cet exploit !!"
 
@@ -465,7 +465,7 @@ label bonne_fin: # 3 fantomes en etat 2
 
     "C’est sur ces mots que je m’enfuis de ce manoir avec la voiture de Léa. Sous le regard de trois fantômes qui doivent encore se demander pourquoi ils ont aidé un abruti pareil."
 
-    "Bonne fin : Tu as survécu jeune héros ! Maintenant file rattraper ton retard !"
+    "Bonne fin : Tu as survécu jeune héros ! Maintenant file rattraper ton retard (connard) !"
 
     return
 
